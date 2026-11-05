@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shalahuddin Giri Pamungkas | AI Systems Architect & Creative Engineer</title>
+  <meta name="description" content="Cinematic interactive portfolio of Shalahuddin Giri Pamungkas (@giriedu) — AI Systems Architect, Creator of Maxilun & Maxilun Trade.">
+  <meta name="keywords" content="giriedu, Shalahuddin Giri Pamungkas, Maxilun, AI engineering, autonomous agents, quantitative trading, WebGL, motion design">
+  <meta name="author" content="Shalahuddin Giri Pamungkas">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://giriedu.github.io/myctr/">
+  <meta property="og:title" content="Shalahuddin Giri Pamungkas | Cinematic Web Profile">
+  <meta property="og:description" content="AI Systems Architect · Autonomous Agent Engines · Creative Technologist. Explore Maxilun ecosystem, interactive 3D terminal, and motion-driven engineering.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/giriedu/myctr/main/assets/avatar.svg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Space Grotesk & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Dynamic Starfield & Constellation Canvas -->
+  <canvas id="space-canvas"></canvas>
+
+  <!-- CRT Scanline & Film Vignette Overlay -->
+  <div class="cinema-overlay"></div>
+
+  <!-- Main Application Wrapper -->
+  <div class="app-container">
+
+    <!-- Top Telemetry & HUD Bar -->
+    <header class="telemetry-nav">
+      <a href="#top" class="brand-badge">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 64 64" fill="none">
+            <polygon points="32,14 48,23 48,41 32,50 16,41 16,23" stroke="#06b6d4" stroke-width="4" fill="none"/>
+            <path d="M38 24 C36 21 32 20 28 22 C23 24 21 29 21 34 C21 40 25 44 31 44 C37 44 41 40 41 35 L31 35" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="brand-title">GIRIEDU // SYS.OS</span>
+      </a>
+
+      <div class="telemetry-items">
+        <span class="telemetry-tag">
+          <span class="pulse-dot"></span>
+          <span>ONLINE</span>
+        </span>
+        <span class="telemetry-tag">
+          <span>TIME:</span>
+          <strong id="telemetry-time" style="color:var(--cyan)">--:--:-- WIB</strong>
+        </span>
+        <span class="telemetry-tag">
+          <span>LOC:</span>
+          <strong>JKT / 106.8°E</strong>
+        </span>
+      </div>
+
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="btn-hud" aria-label="Toggle Audio">
+          <span class="sound-bars">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </span>
+          <span class="sound-label">AUDIO: MUTED</span>
+        </button>
+
+        <button id="warp-toggle-btn" class="btn-hud" aria-label="Toggle Warp Speed">
+          <span>🚀 WARP</span>
+        </button>
+
+        <a href="https://github.com/giriedu" target="_blank" class="btn-hud" rel="noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GITHUB</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="top" class="hero-section">
+      <div class="hero-content">
+        <div class="system-coord">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polygon points="12 2 15 8 22 9 17 14 18 21 12 17 6 21 7 14 2 9 9 8 12 2"/>
+          </svg>
+          <span>ARCHITECTURAL INTELLIGENCE · PROTOCOL v1.0</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span data-decode class="name-highlight">SHALAHUDDIN GIRI</span><br>
+          <span style="color:#ffffff;">PAMUNGKAS</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Building deterministic multi-agent architectures, executable AST knowledge graphs, and quantitative risk orchestration engines. Creator of <span class="typewriter">Maxilun</span>.
+        </p>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat">
+            <span class="stat-number cyan">18</span>
+            <span class="stat-label">AI Specialist Skills</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number violet">0%</span>
+            <span class="stat-label">AI Slop / Pure Proof</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number emerald">AST</span>
+            <span class="stat-label">Knowledge Graph Core</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number">60+ FPS</span>
+            <span class="stat-label">WebGL Motion Choreography</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn-primary-neon">
+            <span>EXPLORE ECOSYSTEM</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#terminal-section" class="btn-secondary-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+            <span>LAUNCH TERMINAL</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Holographic Interactive Avatar Core -->
+      <div class="hero-visual">
+        <div class="hologram-stage">
+          <img src="assets/avatar.svg" alt="Holographic Monogram Avatar" class="avatar-graphic">
+          <div class="telemetry-chip chip-top">
+            <span style="color:var(--cyan)">● AST GRAPH:</span> 1.4K NODES
+          </div>
+          <div class="telemetry-chip chip-bottom">
+            <span style="color:var(--violet)">● RISK ORCHESTRATOR:</span> ACTIVE
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="section-header">
+        <div class="section-meta">FLAGSHIP INNOVATIONS</div>
+        <h2 class="section-title">Engineered Deliverables</h2>
+        <p class="section-desc">
+          Production systems built on four always-on quality engines: reversibility-gated triage, strict cognitive limits, verifiable AST proof, and pure software engineering.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Project 1: MAXILUN -->
+        <div class="project-card">
+          <div class="card-top">
+            <div class="card-category">
+              <span class="badge-category">AI Infrastructure</span>
+              <span class="badge-version">v1.0.0 · PUBLIC</span>
+            </div>
+            <h3 class="card-title">Maxilun</h3>
+            <p class="card-desc">
+              Autonomous AI engineering co-pilot featuring 18 specialist skills, 1 orchestrator, in-process Knowledge Graph with 3D WebGL Galaxy visualizer, and zero-dependency Python stdlib harness.
+            </p>
+            <div class="card-tags">
+              <span class="tag-chip">Python Stdlib</span>
+              <span class="tag-chip">AST Parser</span>
+              <span class="tag-chip">3D WebGL</span>
+              <span class="tag-chip">Multi-Agent</span>
+              <span class="tag-chip">Purity Gate</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/giriedu/maxilun" target="_blank" class="btn-card-link" rel="noreferrer">
+              <span>View Repository</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: MAXILUN-TRADE -->
+        <div class="project-card">
+          <div class="card-top">
+            <div class="card-category">
+              <span class="badge-category" style="color:var(--violet);border-color:rgba(139,92,246,0.3);background:rgba(139,92,246,0.1)">Quantitative Finance</span>
+              <span class="badge-version">ALGO ENGINE</span>
+            </div>
+            <h3 class="card-title">Maxilun-Trade</h3>
+            <p class="card-desc">
+              Quantitative day trading, market intelligence, algorithmic risk engine, and broker execution orchestrator engineered specifically for autonomous AI agents.
+            </p>
+            <div class="card-tags">
+              <span class="tag-chip">Algorithmic Trading</span>
+              <span class="tag-chip">Risk Engine</span>
+              <span class="tag-chip">Low Latency</span>
+              <span class="tag-chip">Market Intel</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/giriedu/maxilun-trade" target="_blank" class="btn-card-link" rel="noreferrer">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: SIFORMA -->
+        <div class="project-card">
+          <div class="card-top">
+            <div class="card-category">
+              <span class="badge-category" style="color:var(--emerald);border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.1)">Platform Engine</span>
+              <span class="badge-version">PRODUCTION</span>
+            </div>
+            <h3 class="card-title">SIFORMA</h3>
+            <p class="card-desc">
+              Sistem Formulir Mandiri — Interactive, responsive dynamic form builder with declarative schema validation, conditional logic routing, and instantaneous state hydration.
+            </p>
+            <div class="card-tags">
+              <span class="tag-chip">Form Builder</span>
+              <span class="tag-chip">Dynamic Schema</span>
+              <span class="tag-chip">State Engine</span>
+              <span class="tag-chip">UX Architecture</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/giriedu/siforma" target="_blank" class="btn-card-link" rel="noreferrer">
+              <span>View System</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & Skills Matrix -->
+    <section id="skills">
+      <div class="section-header">
+        <div class="section-meta">TECHNICAL TAXONOMY</div>
+        <h2 class="section-title">Core Competencies</h2>
+        <p class="section-desc">
+          Holistic stack expertise from low-level runtime engines to immersive WebGL motion design and system choreography.
+        </p>
+      </div>
+
+      <div class="matrix-grid">
+        <div class="matrix-card">
+          <div class="matrix-icon">🧠</div>
+          <h3 class="matrix-title">Autonomous AI Systems</h3>
+          <ul class="matrix-list">
+            <li class="matrix-item">
+              <span>Multi-Agent Wave Orchestration</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:96%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>AST Knowledge Graph Scanners</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:94%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>Purity Engine & Cognitive Gates</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:98%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>Local Model Runtimes (Ollama, DeepSeek)</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:90%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="matrix-card">
+          <div class="matrix-icon">✨</div>
+          <h3 class="matrix-title">Creative Web & Motion</h3>
+          <ul class="matrix-list">
+            <li class="matrix-item">
+              <span>WebGL & Canvas 3D Shaders</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:92%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>Damped Spring Physics & Choreography</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:95%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>Design Systems (OKLCH, AAA a11y)</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:93%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>Procedural Web Audio API</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:88%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="matrix-card">
+          <div class="matrix-icon">⚡</div>
+          <h3 class="matrix-title">Quantitative & Backend</h3>
+          <ul class="matrix-list">
+            <li class="matrix-item">
+              <span>Python High-Performance Stdlib</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:96%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>Risk Engine & Algorithmic Triage</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:90%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>Event-Driven Async Architectures</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:92%"></div></div>
+            </li>
+            <li class="matrix-item">
+              <span>Cryptographic Safety & Zero-Trust APIs</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:94%"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive HUD Command Terminal -->
+    <section id="terminal-section">
+      <div class="section-header">
+        <div class="section-meta">LIVE REPL</div>
+        <h2 class="section-title">Interactive HUD Terminal</h2>
+        <p class="section-desc">
+          Interact with Giri's system directly. Query capabilities, trigger hyperspace warp mode, or inspect raw system metrics.
+        </p>
+      </div>
+
+      <div class="terminal-wrapper" id="hud-terminal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span>giri@autonomous-node:~ (bash)</span>
+          <span>TTY-01</span>
+        </div>
+
+        <div class="terminal-chips">
+          <button class="cmd-chip" data-cmd="whoami">whoami</button>
+          <button class="cmd-chip" data-cmd="skills">skills</button>
+          <button class="cmd-chip" data-cmd="projects">projects</button>
+          <button class="cmd-chip" data-cmd="warp">warp</button>
+          <button class="cmd-chip" data-cmd="sound">sound</button>
+          <button class="cmd-chip" data-cmd="matrix">matrix</button>
+          <button class="cmd-chip" data-cmd="contact">contact</button>
+          <button class="cmd-chip" data-cmd="help">help</button>
+        </div>
+
+        <div class="terminal-body" id="terminal-output">
+          <div class="terminal-line">
+            <span class="term-success">● SYSTEM ONLINE:</span> Autonomous HUD Terminal v1.0 connected to session.
+          </div>
+          <div class="terminal-line">
+            Type <b style="color:var(--cyan)">help</b> or click any chip above to execute directives.
+          </div>
+        </div>
+
+        <div class="terminal-input-row" style="padding: 12px 20px; background: #070e1e; border-top: 1px solid rgba(255,255,255,0.06);">
+          <span class="term-prompt">guest@giri:~$</span>
+          <input type="text" id="terminal-input" class="terminal-input" placeholder="Type command here (e.g. whoami, warp, projects)..." autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collaboration Section -->
+    <section class="contact-section">
+      <h2 class="contact-title">Architecting the Next Horizon</h2>
+      <p class="contact-desc">
+        Interested in autonomous agent orchestration, AST-driven tooling, quantitative systems, or high-end motion web engineering? Let's connect.
+      </p>
+      <div class="contact-actions">
+        <button id="copy-email-btn" class="btn-primary-neon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>COPY EMAIL DIRECT</span>
+        </button>
+        <a href="https://github.com/giriedu" target="_blank" class="btn-secondary-ghost" rel="noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GITHUB PROFILE</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div>
+        <span>SHALAHUDDIN GIRI PAMUNGKAS &copy; 2026 // ALL SYSTEMS VERIFIED</span>
+      </div>
+      <div class="footer-links">
+        <a href="#top" class="footer-link">Back to Top &uarr;</a>
+        <a href="https://github.com/giriedu/maxilun" target="_blank" class="footer-link" rel="noreferrer">Maxilun</a>
+        <a href="https://github.com/giriedu/maxilun-trade" target="_blank" class="footer-link" rel="noreferrer">Maxilun-Trade</a>
+        <a href="mailto:shalahuddingiripamungkas@gmail.com" class="footer-link">Direct Mail</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Interactive Toast Notification -->
+  <div id="cinema-toast" class="cinema-toast">Ready</div>
+
+  <!-- Scripts -->
+  <script src="scripts/canvas.js"></script>
+  <script src="scripts/audio.js"></script>
+  <script src="scripts/terminal.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
