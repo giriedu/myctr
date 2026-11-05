@@ -114,7 +114,7 @@ class InteractiveTerminal {
   cmdWhoami() {
     this.appendLine(`
 <div class="term-output">
-  <span class="term-highlight">SHALAHUDDIN GIRI PAMUNGKAS</span> (@giriedu)<br/>
+  <span class="term-highlight">GIRIEDU</span> (@giriedu)<br/>
   &bull; <b style="color:var(--cyan)">Role:</b> AI Systems Architect & Creative Software Engineer<br/>
   &bull; <b style="color:var(--violet)">Focus:</b> Autonomous Agent Orchestration, Executable Knowledge Graphs, High-Frequency Trading Risk Engines & Motion-Driven Web Experiences.<br/>
   &bull; <b style="color:var(--emerald)">Philosophy:</b> Verifiable proof over unconstrained promises. Stdlib-first, AST-accurate, zero fluff.
@@ -147,7 +147,7 @@ class InteractiveTerminal {
     this.appendLine(`
 <div class="term-output">
   <span class="term-highlight">DIRECT CHANNELS:</span><br/>
-  &bull; <b style="color:var(--cyan)">Email:</b> <a href="mailto:shalahuddingiripamungkas@gmail.com" style="color:var(--cyan);text-decoration:underline;">shalahuddingiripamungkas@gmail.com</a><br/>
+  &bull; <b style="color:var(--cyan)">Email:</b> <a href="mailto:info@maxilun.com" style="color:var(--cyan);text-decoration:underline;">info@maxilun.com</a><br/>
   &bull; <b style="color:var(--violet)">GitHub:</b> <a href="https://github.com/giriedu" target="_blank" style="color:var(--violet);text-decoration:underline;">github.com/giriedu</a>
 </div>`);
   }

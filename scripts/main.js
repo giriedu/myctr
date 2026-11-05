@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (copyBtn) {
     copyBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      const email = 'shalahuddingiripamungkas@gmail.com';
+      const email = 'info@maxilun.com';
       navigator.clipboard.writeText(email).then(() => {
         showToast('📋 Email copied to clipboard!');
         soundEngine.playClick();

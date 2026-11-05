@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="assets/avatar.svg" alt="Shalahuddin Giri Pamungkas Hologram" width="160">
+<img src="assets/avatar.svg" alt="GIRIEDU Hologram" width="160">
 
-# ⚡ SHALAHUDDIN GIRI PAMUNGKAS
+# ⚡ GIRIEDU
 ### `@giriedu` · AI Systems Architect & Creative Software Engineer
 
 [![Live Web Profile](https://img.shields.io/badge/🌐_LIVE_EXPERIENCE-giriedu.github.io%2Fmyctr-06b6d4?style=for-the-badge)](https://giriedu.github.io/myctr/)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-giriedu-8b5cf6?style=for-the-badge&logo=github)](https://github.com/giriedu)
-[![Email](https://img.shields.io/badge/Direct_Mail-shalahuddingiripamungkas%40gmail.com-10b981?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shalahuddingiripamungkas@gmail.com)
+[![Email](https://img.shields.io/badge/Direct_Mail-info%40maxilun.com-10b981?style=for-the-badge&logo=gmail&logoColor=white)](mailto:info@maxilun.com)
 
 <p align="center">
   <strong>Jakarta, Indonesia (UTC+7) · Autonomous AI Orchestration · Executable AST Graphs · Quantitative Risk Engines · 3D WebGL Motion</strong>
@@ -79,5 +79,5 @@ Visit the live site: [https://giriedu.github.io/myctr/](https://giriedu.github.i
 ---
 
 <div align="center">
-  <sub>Shalahuddin Giri Pamungkas &copy; 2026 · All systems operational.</sub>
+  <sub>GIRIEDU &copy; 2026 · All systems operational.</sub>
 </div>
